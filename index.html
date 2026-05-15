@@ -226,8 +226,9 @@
             <h3 class="section-title">2. Ephemeral Messages and Storage</h3>
             <p class="policy-text">The Occultis architecture is based on the transience of information:</p>
             <ul>
-                <li><strong>Automatic Deletion:</strong> All messages exchanged through the platform are <strong>permanently deleted from our servers after 60 seconds</strong>.</li>
-                <li><strong>No Chat Logs:</strong> We do not keep logs, backups, or archives of messages after the aforementioned 60-second period. Once this time has elapsed, the content becomes unrecoverable for the sender, the recipient, and the service itself.</li>
+                <li><strong>Automatic Deletion:</strong> All messages and images exchanged through the platform are <strong>automatically deleted from our system after 60 seconds</strong>. Additionally, any conversation that remains inactive for more than 5 minutes is entirely removed.</li>
+                <li><strong>Database Infrastructure (Firebase):</strong> While Occultis programmatically deletes all data (messages, images, and inactive chats) as described, our application utilizes Google Firebase as its backend database. Therefore, the actual physical deletion of this data from the storage servers is subject to Google Firebase's data retention and deletion policies. We cannot determine or guarantee the exact timeline for when this data is permanently wiped from their physical servers.</li>
+                <li><strong>No Chat Logs:</strong> We do not keep logs, backups, or archives of messages after the aforementioned periods. Once elapsed, the content becomes unrecoverable for the sender, the recipient, and the service itself.</li>
             </ul>
 
             <h3 class="section-title">3. Use of Information</h3>
@@ -248,7 +249,7 @@
             <p class="policy-text">Users have full autonomy over their presence on the service:</p>
             <ul>
                 <li><strong>In-App Deletion:</strong> On the "Buy Credits" screen, at the bottom, there is a button for account deletion. Upon confirming the action, your account and its link to your email are immediately removed from our records.</li>
-                <li><strong>Messages:</strong> Because messages are automatically deleted every 60 seconds, there are no conversation records associated with the account at the time of deletion.</li>
+                <li><strong>Messages:</strong> Because messages are automatically deleted every 60 seconds (and inactive chats after 5 minutes), there are no conversation records associated with the account at the time of deletion.</li>
             </ul>
 
             <h3 class="section-title">6. International Compliance</h3>
